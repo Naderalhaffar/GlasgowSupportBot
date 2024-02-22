@@ -71,3 +71,36 @@ npm install
   ```bash
   npm start
   ```
+  ## Testing
+
+This section describes how to run tests for both the backend and frontend components of the Glasgow Support Bot to ensure everything is working correctly.
+
+### Backend Testing with Pytest
+
+To run tests on the backend, you should stay in the `backend` directory. This part of the application comes with a suite of tests to verify the functionality of the support bot's backend services. To execute these tests, use the following command:
+
+```bash
+pytest
+```
+
+This command will automatically find and run all tests within the backend directory. You should see output indicating the number of tests passed, failed, and possibly skipped. There are 9 tests designed to cover various aspects of the backend functionality.
+
+### Frontend Testing
+
+For testing the frontend, you need to navigate to the specific tests directory inside the frontend part of the application. These tests are designed to ensure that the user interface behaves as expected and interacts correctly with the backend services.
+
+First, ensure you are in the root directory of the Glasgow Support Bot, then move to the frontend tests directory:
+
+```bash
+cd frontend/src/Tests
+```
+
+Once in the correct directory, you can run the frontend tests using the following command:
+
+```bash
+npm test
+```
+
+This command will start the test runner in interactive watch mode and execute all `.js` test files located in the Tests directory. It will provide feedback on which tests have passed or failed, allowing you to ensure that the frontend of the Glasgow Support Bot is functioning correctly.
+
+Make sure you have installed all necessary dependencies as described in the installation section before running these tests. This ensures that both the backend and frontend environments are correctly set up for testing.
