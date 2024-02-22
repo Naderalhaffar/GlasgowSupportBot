@@ -1,0 +1,10 @@
+chromadb
+openai 
+tiktoken  
+langchain == 0.0.354
+langchain-community== 0.0.8
+unstructured 
+flask
+flask-cors
+pytest
+mock

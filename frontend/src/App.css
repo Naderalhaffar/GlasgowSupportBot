@@ -1,0 +1,309 @@
+.App {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 280px; /* Shift the main content to the right */
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f5f5f5; 
+  color: #333;
+  max-height: 100vh; 
+  overflow: hidden; /* Changed from hidden to auto to allow scrolling */
+  background-image: url('http://localhost:3000/UniversityBackground.png');
+  background-size: cover;
+  background-position: center;  
+}
+
+.messages-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #f9f9f9;
+}
+.messages-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+input[type="text"], button {
+  margin: 10px;
+  width: calc(100% - 40px); 
+  padding: 15px; 
+  border: 1px solid #ccc;
+  font-size: 18px;
+  border-radius: 8px; 
+}
+input[type="text"]:hover, button:hover {
+  border-color: #999999; /* Lighter shade for hover */
+}
+
+.input-container {
+  display: flex;
+  border-top: 1px solid #ccc;
+  background-color: #fafafa;
+  padding: 10px;
+  position: absolute; /* Position it at the bottom of chat-container */
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  width: 100%; 
+
+}
+
+.chat-container {
+  flex-grow: 1;
+  margin-right: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px auto;
+  margin-top: 0px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  position: relative; 
+  margin-bottom: 10px; 
+  justify-content: space-between; 
+  height: calc(100vh - 45px); 
+
+
+}
+
+
+button.send-button {
+  max-width: 95px; 
+  margin-left: auto; 
+  margin-right: 5px; 
+  padding: 10px 20px; 
+
+}
+button.send-button:hover {
+  background-color: #0056b3;
+}
+
+.documentation-button {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 280px; /* Match the width of the history panel */
+  background-color: #171818;
+  color: white;
+  padding: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+
+}
+.faq-button {
+  position: fixed;
+  bottom: 62px; 
+  left: 0px;
+  width: 280px; 
+  display: block; 
+  box-sizing: border-box;
+  background-color: #171818;
+  color: white;
+  padding: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+
+}
+.export-messages-button{
+  position: fixed;
+  font-size: 18px;
+  bottom: 114px; 
+  left: 0px;
+  width: 280px; 
+  margin-left: 0px;
+  display: block; 
+  box-sizing: border-box;
+  background-color: #171818;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+}
+.faq-button:hover,
+.documentation-button:hover,
+.export-messages-button:hover{
+  background-color: #333333; /* Darker shade for hover, adjust color as needed */
+  color: white; /* Ensure text is readable on hover background */
+}
+
+
+/* InputBox styles */
+.input-text {
+  height: 72px;
+  width: 100%;
+  flex-grow: 2;
+  font-size: 18px; 
+  padding: 10px 15px; /* Padding inside the input */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none; 
+  margin-right: 10px;
+  margin-top: 10px;
+  min-width: 0; 
+  position: sticky; /* Make the input container stick to the bottom of chat-container */
+  bottom: 0; /* Aligned to the bottom */
+  left: 0; 
+  right: 0; 
+  z-index: 100; /* Making sure it sits above other content */
+
+}
+.send-button {
+  height: 70px;
+  padding: 10px 20px; 
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; 
+}
+
+/* App.css */
+.history-panel {
+  width: 280px; /* Set the width for the history panel */
+  background-color: #f2f2f2;
+  max-height: 100vh; /* Limit the height to the view height */
+  padding-bottom: 140px;  height: 100vh; /* Full height minus some margin */
+  position: fixed; /* So it doesn't move when scrolling the main content */
+  left: 0;
+  font-size: 18px;
+  top: 0px; /* Give some top margin */
+  border-right: 1px solid #ccc; /* A line to separate from the content */
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Horizontally center the content */
+  padding: 10px;
+  flex-grow: 1;
+  border-bottom: 1px solid #ccc;
+  max-width: 90%; 
+  margin: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+
+}
+
+.history-item span {
+  white-space: normal; /* Allows the text to wrap */
+  overflow-wrap: break-word; /* Ensures long words do not cause overflow */
+  flex-grow: 1; /* Allows the text to expand filling the container */
+}
+
+
+
+.history-item:hover {
+  background-color: #e2e2e2;
+  cursor: pointer;
+  
+}
+/* Adjust the button sizes to match the width of the history panel */
+.history-panel button {
+  width: 90%;
+  box-sizing: border-box; /* Ensures padding doesn't add to the width */
+  cursor: pointer;  
+}
+.delete-chat-button {
+  padding: 4px 8px; /* Reduce padding to make the button smaller */
+  font-size: 0.8rem; /* Reduce font size if necessary */
+  margin-left: 120px; /* Add some margin to separate it from the chat text */
+  border: 1px solid #ccc; 
+  background-color: #020202; 
+  border-radius: 4px;
+  
+}
+
+/* If you're using Font Awesome or similar */
+.fa-trash {
+  color: #a1a1a1; 
+  font-size: 1.2rem; /* Size of the bin icon */
+}
+
+/* Style for hovering over the bin icon */
+.delete-chat-button:hover .fa-trash {
+  color: #f00; /* Color change on hover to indicate it's clickable */
+}
+.main-content {
+  flex-grow: 1; /* Allow the main content to grow and fill the remaining width */
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: calc(100vh - 40px); /* Full height minus padding */
+}
+.main-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.message {
+  display: flex;
+  justify-content: center; /* Center-align the messages */
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.message-content {
+  max-width: 60%;
+  text-align: left;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #f1f0f0;
+  color: #333;
+  word-wrap: break-word; /* This will break long words that would otherwise overflow */
+  overflow-wrap: break-word; /* This ensures that the text breaks to prevent overflow */
+  display: inline-block; 
+  font-size: 18px;
+}
+
+.theme-toggle-button {
+  position: fixed;
+  bottom: 110px; 
+  left: 0px;
+  margin-left: 0px;
+  width: 280px; 
+  display: block; 
+  box-sizing: border-box;
+  background-color: #171818;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.chat-placeholder {
+  text-align: center;
+  margin-top: 20%;
+  color: #999;
+}
+
+.chat-placeholder p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* This ensures that padding does not affect the total width/height of elements */
+}
+

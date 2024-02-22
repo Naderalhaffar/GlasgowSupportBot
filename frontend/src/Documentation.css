@@ -1,0 +1,82 @@
+.documentation-container {
+  max-width: 80%; /* Adjusted for better space utilization */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px; /* Increased font size */
+  line-height: 1.6; /* Improved line height for readability */
+  background-color: #f7f7f7;
+  color: #333;
+}
+  
+  .documentation-header,
+  .documentation-footer {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .overview-section,
+  .support-services-section,
+  .installation-setup-section,
+  .libraries-section,
+  .additional-info-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #2c3e50;
+    font-size: 2em;
+  }
+  
+  h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  ul li::before {
+    content: '• ';
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  .code-container {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-left: 3px solid #3498db;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+    font-size: 16px;
+  }
+  
+  code {
+    display: block; 
+    white-space: pre-wrap;
+    color: #c0392b;
+  }
+  
+  .back-to-chat-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 18px
+  }
+  
+  .back-to-chat-link:hover {
+    background-color: #2980b9;
+  }
+  
