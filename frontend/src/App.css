@@ -102,12 +102,13 @@ button.send-button:hover {
   border-radius: 4px;
   cursor: pointer;
   font-size: 18px;
+  display: block; 
   transition: background-color 0.3s ease-in-out;
 
 }
 .faq-button {
   position: fixed;
-  bottom: 62px; 
+  bottom: 61px; 
   left: 0px;
   width: 280px; 
   display: block; 
@@ -125,7 +126,7 @@ button.send-button:hover {
 .export-messages-button{
   position: fixed;
   font-size: 18px;
-  bottom: 114px; 
+  bottom: 176px; 
   left: 0px;
   width: 280px; 
   margin-left: 0px;
@@ -140,9 +141,29 @@ button.send-button:hover {
   transition: background-color 0.3s ease-in-out;
 
 }
+.support-service-button{
+  position: fixed;
+  font-size: 18px;
+  bottom: 121.5px; /* Position it above the Export Chat button */
+  left: 0px;
+  width: 280px;
+  margin-left: 0px;
+  display: block;
+  box-sizing: border-box;
+  background-color: #171818; /* Choose a different color to distinguish it */
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
 .faq-button:hover,
 .documentation-button:hover,
-.export-messages-button:hover{
+.export-messages-button:hover,
+.support-service-button:hover{
   background-color: #333333; /* Darker shade for hover, adjust color as needed */
   color: white; /* Ensure text is readable on hover background */
 }

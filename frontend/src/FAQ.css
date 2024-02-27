@@ -2,7 +2,7 @@
   max-width: 80%; /* Adjusted for better space utilization */
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   font-size: 18px; /* Increased font size */
   line-height: 1.6; /* Improved line height for readability */
   background-color: #f7f7f7;
@@ -32,11 +32,7 @@
     padding-bottom: 10px;
     font-size: 1.5em;
   }
-  
-  .faq-footer {
-    text-align: center;
-    padding-top: 20px;
-  }
+ 
   
   .back-to-chat-link {
     display: inline-block;

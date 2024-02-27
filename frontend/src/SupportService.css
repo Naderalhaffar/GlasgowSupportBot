@@ -1,0 +1,51 @@
+.support-service-container {
+  max-width: 85%; 
+  margin: 20px auto; 
+  padding: 25px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 18px; 
+  line-height: 1.6; 
+  background-color: #f9f9f9; 
+  color: #333; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.support-service-header {
+  text-align: center;
+  margin-bottom: 40px; 
+  color: #3498db; 
+}
+
+.service-section {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  padding: 20px; /* Increased padding for more space around content */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12); /* Slightly stronger shadow for more depth */
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 2.5em; /* Made header text larger for emphasis */
+}
+
+h2 {
+  border-bottom: 3px solid #3498db; /* Thicker border for more noticeable separation */
+  padding-bottom: 10px; /* Increased padding for aesthetic balance */
+  margin-bottom: 20px; /* Increased margin for clearer section divisions */
+  font-size: 1.75em; /* Slightly larger for hierarchical emphasis */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0; /* Aligning items to the left for a cleaner look */
+}
+
+ul li::before {
+  content: '•';
+  color: #3498db; /* Keeping thematic color consistency */
+  font-weight: bold;
+  margin-right: 5px; /* Added space between bullet and text for readability */
+}
+

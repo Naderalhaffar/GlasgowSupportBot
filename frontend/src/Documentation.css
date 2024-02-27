@@ -1,82 +1,86 @@
 .documentation-container {
-  max-width: 80%; /* Adjusted for better space utilization */
+  max-width: 85%;
   margin: 0 auto;
-  padding: 20px;
-  font-family: 'Arial', sans-serif;
-  font-size: 18px; /* Increased font size */
-  line-height: 1.6; /* Improved line height for readability */
-  background-color: #f7f7f7;
+  padding: 40px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  background-color: #f9f9f9;
   color: #333;
 }
-  
-  .documentation-header,
-  .documentation-footer {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .overview-section,
-  .support-services-section,
-  .installation-setup-section,
-  .libraries-section,
-  .additional-info-section {
-    background-color: #fff;
+
+.documentation-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.overview-section, .installation-setup-section, .libraries-section, .feedback-section, .testing-section, .user-guide-section, .troubleshooting-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+h1, h2, h3 {
+  color: #2a3f54;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.code-container {
+  background-color: #eef2f3;
+  padding: 20px;
+  border-left: 5px solid #3498db;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  overflow-x: auto;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+  color: #d04a35;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: '• ';
+  color: #3498db;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .documentation-container {
     padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    color: #2c3e50;
-    font-size: 2em;
-  }
-  
-  h2 {
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    font-size: 1.5em;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding-left: 20px;
-  }
-  
-  ul li::before {
-    content: '• ';
-    color: #3498db;
-    font-weight: bold;
-  }
-  
-  .code-container {
-    background-color: #ecf0f1;
-    padding: 15px;
-    border-left: 3px solid #3498db;
-    font-family: 'Courier New', Courier, monospace;
-    overflow-x: auto;
     font-size: 16px;
   }
-  
-  code {
-    display: block; 
-    white-space: pre-wrap;
-    color: #c0392b;
+
+  h2 {
+    font-size: 24px;
   }
-  
-  .back-to-chat-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-size: 18px
+
+  h3 {
+    font-size: 20px;
   }
-  
-  .back-to-chat-link:hover {
-    background-color: #2980b9;
-  }
-  
+}

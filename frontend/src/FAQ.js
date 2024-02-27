@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './FAQ.css'; 
 
 const FAQ = () => {
   return (
     <div className="faq-container">
       <header className="faq-header">
-        <h1>FAQ</h1>
+        <h1>Frequently Asked Questions</h1>
         <p>Here you can find answers to frequently asked questions about GlasgowSupportBot and its services.</p>
       </header>
       
@@ -47,9 +46,7 @@ const FAQ = () => {
         </div>
       </section>
 
-      <footer className="faq-footer">
-        <Link to="/" className="back-to-chat-link">Back to Chat</Link>
-      </footer>
+    
     </div>
   );
 };

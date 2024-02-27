@@ -5,6 +5,8 @@ import Documentation from './Documentation';
 import FAQ from './FAQ';
 import ChatHistory from './ChatHistory';
 import WelcomePopup from './WelcomePopUp'; 
+import SupportService from './SupportService'; 
+import Feedback from './Feedback';
 import './App.css';
 
 
@@ -56,17 +58,18 @@ function App() {
       <div className="main-content">
         <ExportChatButton onExport={exportMessagesToTxt} />
         <Routes>
-          <Route path="/" element={
-            <>
-              {activeChat ? <ChatBox activeChat={activeChat} setActiveChat={setActiveChat} /> : <div>Please select a chat from the history or start a new chat.</div>}
-              <Link to="/faq" className="faq-button">FAQ</Link>
-              <Link to="/documentation" className="documentation-button">Documentation</Link>
-            </>
-          } />
+          <Route path="/" element={activeChat ? <ChatBox activeChat={activeChat} setActiveChat={setActiveChat} /> : <div>Please select a chat from the history or start a new chat.</div>} />
           <Route path="/documentation" element={<Documentation />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/support-service" element={<SupportService />} />
         </Routes>
+        <div className="navigation-buttons">
+          <Link to="/faq" className="faq-button">FAQ</Link>
+          <Link to="/documentation" className="documentation-button">Documentation</Link>
+          <Link to="/support-service" className="support-service-button">Support Services</Link>
+        </div>
       </div>
+      <Feedback/>
     </div>
   );
 }
