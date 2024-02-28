@@ -4,7 +4,7 @@ import base64
 from unittest.mock import patch, MagicMock
 import pytest
 
-from App import app, create_message, send_email
+from app import app, create_message, send_email
 
 @pytest.fixture
 def client():
@@ -19,13 +19,13 @@ def test_environment_variables():
 
 def test_ask_endpoint_valid_request(client):
     """Test the /ask endpoint with a valid request."""
-    with patch('App.query_database') as mock_query:
+    with patch('app.query_database') as mock_query:
         mock_query.return_value = "Test Response"
         response = client.post('/ask', data=json.dumps({'prompt': 'test query'}), content_type='application/json')
         assert response.status_code == 200
         assert response.json == {'response': 'Test Response'}
 
-@patch('App.send_email')
+@patch('app.send_email')
 def test_send_email_endpoint(mock_send_email, client):
     """Test the /send-email endpoint functionality."""
     mock_send_email.return_value = None
@@ -53,7 +53,7 @@ def test_create_message():
     assert subject in str(decoded_message)
     assert message_html in str(decoded_message)
 
-@patch('App.build')
+@patch('app.build')
 def test_send_email_functionality(mock_build, client):
     # Setup mock service object and its method chain
     mock_service = MagicMock()
