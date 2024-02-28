@@ -13,7 +13,7 @@ const ChatHistory = ({ onSelectChat, onDeleteChat }) => {
   }, [chats]);
 
   const createNewChat = () => {
-    if (chats.length >= 6) {
+    if (chats.length >= 5) {
       // Notify user that no more chats can be created, if desired
       alert("Maximum number of chats reached. Please delete an old chat before creating a new one.");
       return; // Prevent the creation of a new chat
