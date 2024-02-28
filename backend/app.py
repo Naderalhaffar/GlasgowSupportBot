@@ -103,4 +103,4 @@ def submit_feedback():
 
 if __name__ == '__main__':
     create_or_load_database(THE_CHROMA_PATH)
-    app.run(debug=True)
+    app.run(debug=False)
