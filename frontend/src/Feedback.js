@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Feedback.css'; // Ensure this path correctly points to your CSS file
 
+
+
 const Feedback = () => {
     const [showForm, setShowForm] = useState(false);
     const [message, setMessage] = useState('');
@@ -33,7 +35,7 @@ const Feedback = () => {
         const feedbackData = { subject, name, email, message };
     
         try {
-            const response = await fetch('http://localhost:5000/send-email', {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/send-email`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(feedbackData),

@@ -42,7 +42,7 @@ test('sends a user message and receives an AI response', async () => {
     await findByText('This is an AI response.');
   
     expect(axios.post).toHaveBeenCalled();
-    expect(axios.post).toHaveBeenCalledWith('http://localhost:5000/ask', { prompt: 'User message' });
+    expect(axios.post).toHaveBeenCalledWith(`${process.env.REACT_APP_API_URL}/ask`, { prompt: 'User message' });
   });
   
   
@@ -63,7 +63,7 @@ test('sends a user message and receives an AI response', async () => {
     const errorMessage = await findByText('Error getting response.');
   
     expect(errorMessage).toBeInTheDocument();
-    expect(axios.post).toHaveBeenCalledWith('http://localhost:5000/ask', { prompt: 'User message' });
+    expect(axios.post).toHaveBeenCalledWith(`${process.env.REACT_APP_API_URL}/ask`, { prompt: 'User message' });
   });
   
   

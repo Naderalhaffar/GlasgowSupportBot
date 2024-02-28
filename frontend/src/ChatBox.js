@@ -3,6 +3,8 @@ import Message from './Message';
 import InputBox from './InputBox';
 import axios from 'axios';
 
+
+
 const ChatBox = ({ activeChat, readOnly }) => {
     const [messages, setMessages] = useState([]);
     const [isAITyping, setIsAITyping] = useState(false); // New state to track AI response
@@ -23,7 +25,7 @@ const ChatBox = ({ activeChat, readOnly }) => {
         
         
         try {
-            const response = await axios.post('http://localhost:5000/ask', { prompt: userMessage });
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/ask`, { prompt: userMessage });
             const aiMessageObj = { text: response.data.response.trim(), sender: 'ai' };
             setMessages(messages => [...messages, aiMessageObj]);
             activeChat.messages.push(aiMessageObj);
