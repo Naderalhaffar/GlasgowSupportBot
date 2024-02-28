@@ -70,9 +70,6 @@ npm install
 
   ```bash
   npm start
-<<<<<<< HEAD
-  ```
-=======
   ```
   ## Testing
 
@@ -107,4 +104,3 @@ npm test
 This command will start the test runner in interactive watch mode and execute all `.js` test files located in the Tests directory. It will provide feedback on which tests have passed or failed, allowing you to ensure that the frontend of the Glasgow Support Bot is functioning correctly.
 
 Make sure you have installed all necessary dependencies as described in the installation section before running these tests. This ensures that both the backend and frontend environments are correctly set up for testing.
->>>>>>> d0510240ed941bb7147cb57c5d02ba909bfc7ed3
