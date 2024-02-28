@@ -1,4 +1,4 @@
-chromadb
+chromadb==0.3.29
 openai 
 tiktoken  
 langchain == 0.0.354
