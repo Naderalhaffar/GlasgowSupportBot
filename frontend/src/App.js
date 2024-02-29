@@ -8,6 +8,7 @@ import WelcomePopup from './WelcomePopUp';
 import SupportService from './SupportService'; 
 import Feedback from './Feedback';
 import './App.css';
+import universityBackground from './UniversityBackground.png';
 
 
 const ExportChatButton = ({ onExport }) => {
@@ -52,7 +53,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: `url(${universityBackground})` }}>
       <WelcomePopup /> 
       <ChatHistory onSelectChat={handleSelectChat} onDeleteChat={handleDeleteChat} />
       <div className="main-content">
