@@ -185,7 +185,7 @@ button.send-button:hover {
   bottom: 0; /* Aligned to the bottom */
   left: 0; 
   right: 0; 
-  z-index: 100; /
+  z-index: 100; 
 
 }
 .send-button {
