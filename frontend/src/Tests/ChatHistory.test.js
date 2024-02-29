@@ -45,7 +45,7 @@ describe('ChatHistory', () => {
   });
 
   test('prevents creating a new chat when limit is reached', async () => {
-    const initialChats = JSON.stringify(new Array(8).fill(0).map((_, index) => ({ id: index, messages: [] })));
+    const initialChats = JSON.stringify(new Array(5).fill(0).map((_, index) => ({ id: index, messages: [] })));
     window.localStorage.setItem('chatHistory', initialChats);
     // Mock window.alert to confirm it gets called
     jest.spyOn(window, 'alert').mockImplementation(() => {});
@@ -53,7 +53,7 @@ describe('ChatHistory', () => {
     // Use userEvent directly
     await userEvent.click(screen.getByText('New Chat'));
     const chats = JSON.parse(window.localStorage.getItem('chatHistory'));
-    expect(chats.length).toBe(8); // Confirms no new chats were added
+    expect(chats.length).toBe(5); // Confirms no new chats were added
     // Check if the alert was called
     expect(window.alert).toHaveBeenCalledWith("Maximum number of chats reached. Please delete an old chat before creating a new one.");
     // Clean up the mock to avoid leaks
@@ -61,8 +61,6 @@ describe('ChatHistory', () => {
   });
 
   test('deletes a chat and updates localStorage', async () => {
-    // Assuming delete button fix, if not, use another way to access the delete button, such as data-testid or class name
-    // Example workaround if direct access by role isn't possible:
     const initialChats = JSON.stringify([{ id: 1, messages: [] }, { id: 2, messages: [] }]);
     window.localStorage.setItem('chatHistory', initialChats);
     render(<ChatHistory onSelectChat={() => {}} onDeleteChat={() => {}} />);

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Feedback.css'; // Ensure this path correctly points to your CSS file
+import './Feedback.css';
 
 
 

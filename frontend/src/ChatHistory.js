@@ -29,10 +29,9 @@ const ChatHistory = ({ onSelectChat, onDeleteChat }) => {
     onDeleteChat(chatId); 
   };
 
-  // Convert timestamp to a readable date string
   const formatDate = (timestamp) => {
     const date = new Date(timestamp);
-    return date.toLocaleString(); // Adjust the format as needed
+    return date.toLocaleString(); 
   };
 
   return (

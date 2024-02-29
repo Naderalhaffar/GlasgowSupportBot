@@ -4,7 +4,6 @@ import '@testing-library/jest-dom/extend-expect';
 import ChatBox from '../ChatBox';
 import axios from 'axios';
 
-// Mocking axios
 jest.mock('axios', () => ({
     post: jest.fn(() => Promise.resolve({ data: { response: 'Mocked response' } })),
   }));

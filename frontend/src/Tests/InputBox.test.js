@@ -37,7 +37,7 @@ describe('InputBox Component', () => {
   test('"Send" button is disabled when isAITyping is true', () => {
     render(<InputBox onSendMessage={() => {}} isAITyping={true} />);
   
-    // Since the button text changes based on isAITyping, we should check for "Typing..." instead of "Send"
+    // Since the button text changes based on isAITyping, we should check for "Typing..."
     const sendButton = screen.getByText('Typing...');
   
     // Now we're correctly expecting the button to be disabled when isAITyping is true

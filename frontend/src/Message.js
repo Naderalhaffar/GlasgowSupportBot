@@ -51,7 +51,7 @@ const Message = ({ text, sender }) => {
       <div className="message-content" style={{
         ...messageContentStyle,
         background: sender === 'ai' ? '#e5e5ea' : '#e5e5ea',
-        color: sender === 'ai' ? 'black' : 'black' // Black text for AI, white for user
+        color: sender === 'ai' ? 'black' : 'black' 
       }}>
         <span dangerouslySetInnerHTML={{ __html: messageWithLinks }} style={{ textAlign: 'left' }}></span>
       </div>

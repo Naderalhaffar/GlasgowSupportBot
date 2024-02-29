@@ -1,6 +1,5 @@
-// SupportService.js
 import React from 'react';
-import './SupportService.css'; // Ensure you have the CSS file for styling
+import './SupportService.css'; 
 
 const SupportService = () => {
   return (
@@ -28,8 +27,7 @@ const SupportService = () => {
         </ul>
       </section>
 
-      {/* Placeholder for other sections */}
-              {/* Good Cause Section */}
+      {/* Good Cause Section */}
       <section className="service-section">
         <h2>Good Cause</h2>
         <p>Understanding and navigating the Good Cause claim process for circumstances that impact academic performance.</p>
@@ -54,7 +52,7 @@ const SupportService = () => {
         </ul>
       </section>
 
-              {/* INTERNATIONAL STUDENTS Section */}
+      {/* INTERNATIONAL STUDENTS Section */}
       <section className="service-section">
         <h2>International Students</h2>
         <p>The International Student Support team provides specialized advice and information for international students and their dependants, covering a wide range of issues from welfare, immigration, and financial concerns to understanding UK and Scottish culture.</p>
@@ -94,7 +92,7 @@ const SupportService = () => {
         <p>For more details and specific contact information, please refer to the <a href="https://www.gla.ac.uk/myglasgow/counselling/">University of Glasgow Counselling Service</a> and <a href="https://www.gla.ac.uk/myglasgow/peersupport/">Peer Wellbeing Support website</a>.</p>
       </section>
 
-            {/* PEER WELLBEING SUPPORT Section */}
+        {/* PEER WELLBEING SUPPORT Section */}
         <section className="service-section">
         <h2>Peer Wellbeing Support</h2>
         <p>Peer Wellbeing Supporters are students who have been recruited and received 27 hours of specialized, evidence-based training by qualified counsellors/psychotherapists to equip them for the role.</p>
@@ -123,7 +121,7 @@ const SupportService = () => {
             <li>How do I apply for financial assistance through the Discretionary Fund?</li>
         </ul>
         </section>
-            {/* STUDENT PARENTS Section */}
+        {/* STUDENT PARENTS Section */}
         <section className="service-section">
         <h2>Student Parents</h2>
         <p>The University has a Student Parents & Carers page that provides guidance for students who are parents or guardians of children under the age of 18. </p>

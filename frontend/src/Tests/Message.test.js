@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Message from '../Message'; // Adjust the import path as needed
+import Message from '../Message'; 
 
 describe('Message Component', () => {
   test('correctly displays user messages', () => {
@@ -19,7 +19,6 @@ describe('Message Component', () => {
     const aiText = 'This is an AI response.';
     render(<Message text={aiText} sender="ai" />);
 
-    // Verify that the text is present in the document.
     expect(screen.getByText(aiText)).toBeInTheDocument();
 
     // Verify that the correct avatar is used for an AI message.

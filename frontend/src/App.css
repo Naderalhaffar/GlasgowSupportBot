@@ -144,13 +144,13 @@ button.send-button:hover {
 .support-service-button{
   position: fixed;
   font-size: 18px;
-  bottom: 121.5px; /* Position it above the Export Chat button */
+  bottom: 121.5px; /* Position is below the Export Chat button */
   left: 0px;
   width: 280px;
   margin-left: 0px;
   display: block;
   box-sizing: border-box;
-  background-color: #171818; /* Choose a different color to distinguish it */
+  background-color: #171818; 
   color: white;
   padding: 20px;
   border: none;
@@ -164,12 +164,11 @@ button.send-button:hover {
 .documentation-button:hover,
 .export-messages-button:hover,
 .support-service-button:hover{
-  background-color: #333333; /* Darker shade for hover, adjust color as needed */
-  color: white; /* Ensure text is readable on hover background */
+  background-color: #333333; 
+  color: white; 
 }
 
 
-/* InputBox styles */
 .input-text {
   height: 72px;
   width: 100%;
@@ -182,11 +181,11 @@ button.send-button:hover {
   margin-right: 10px;
   margin-top: 10px;
   min-width: 0; 
-  position: sticky; /* Make the input container stick to the bottom of chat-container */
+  position: sticky; /* input container stick to the bottom of chat-container */
   bottom: 0; /* Aligned to the bottom */
   left: 0; 
   right: 0; 
-  z-index: 100; /* Making sure it sits above other content */
+  z-index: 100; /
 
 }
 .send-button {
@@ -199,7 +198,6 @@ button.send-button:hover {
   cursor: pointer; 
 }
 
-/* App.css */
 .history-panel {
   width: 280px; /* Set the width for the history panel */
   background-color: #f2f2f2;
@@ -255,7 +253,6 @@ button.send-button:hover {
   
 }
 
-/* If you're using Font Awesome or similar */
 .fa-trash {
   color: #a1a1a1; 
   font-size: 1.2rem; /* Size of the bin icon */
@@ -271,7 +268,7 @@ button.send-button:hover {
   height: calc(100vh - 40px); /* Full height minus padding */
 }
 .main-content::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none; 
 }
 
 .message {

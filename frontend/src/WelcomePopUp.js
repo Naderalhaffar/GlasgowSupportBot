@@ -26,7 +26,6 @@ const WelcomePopup = () => {
       setShowPopup(false);
     };
     
-  // Styles
   const styles = {
     popupBackground: {
       position: 'fixed',
