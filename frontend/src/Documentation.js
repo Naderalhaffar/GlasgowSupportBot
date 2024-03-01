@@ -122,8 +122,8 @@ const Documentation = () => {
         <p>We continuously strive to improve GlasgowSupportBot and value your feedback. If you encounter any issues or have suggestions for enhancements, please let us know. There are two ways to provide feedback:</p>
         
         <ul>
-          <li><strong>Support Button:</strong> For immediate assistance or to report a problem, click the "Report Issue" button located at the bottom right of the app. Simply describe the issue you're facing, and your feedback will be directly emailed to our support team. We aim to address and resolve issues promptly to enhance your experience.</li>
-          <li><strong>Email:</strong> Alternatively, you can contact us at <a href="mailto:glasgowsuppbot@gmail.com">glasgowsuppbot@gmail.com</a>. This is our official email, and we welcome any comments, questions, or feedback you may have. We eill review the feedback to ensure the GlasgowSupportBot meets your needs and expectations.</li>
+          <li><strong>Support Button:</strong> For immediate assistance or to report a problem, click the "Feedback" button located at the bottom right of the app. Simply describe the issue you're facing, and your feedback will be directly emailed to our support team. We aim to address and resolve issues promptly to enhance your experience.</li>
+          <li><strong>Email:</strong> Alternatively, you can contact us at <a href="mailto:glasgowsuppbot@gmail.com">glasgowsuppbot@gmail.com</a>. This is our official email, and we welcome any comments, questions, or feedback you may have. We will review the feedback to ensure the GlasgowSupportBot meets your needs and expectations.</li>
         </ul>
 
         <p>Your input is invaluable in helping us refine and improve our service. Thank you for taking the time to share your thoughts and for helping us make GlasgowSupportBot better for everyone.</p>
