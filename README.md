@@ -10,24 +10,24 @@ Here's a look at the main screen of the app. This view is what users are greeted
 
 ![App Interface Overview](Screenshots/welcome.png)
 
+### Chatting Feature in Action
+
+This screenshot shows the chatting feature, where students can ask questions and receive immediate assistance.
+
+![Chatting Feature in Action](Screenshots/normalinterface.png)
 
 ### User Feedback Mechanism
 
 We highly value user feedback as it helps us improve the Glasgow Support Bot. Below is a screenshot illustrating how users can provide feedback about their experience.
 
-![User Feedback Mechanism](path/to/your/screenshot.jpg)
+![User Feedback Mechanism](Screenshots/feedback-message.png)
 
 ### Feedback Submission via Email
 
 After collecting feedback, it's important for us to efficiently process and respond to it. The following screenshot demonstrates the feedback submission process through email.
 
-![Feedback Submission via Email](path/to/your/screenshot.jpg)
+![Feedback Submission via Email](Screenshots/emailfeedback.png)
 
-### Chatting Feature in Action
-
-This screenshot shows the chatting feature, where students can ask questions and receive immediate assistance.
-
-![Chatting Feature in Action](path/to/your/screenshot.jpg)
 
 ## Installation and Setup
 
