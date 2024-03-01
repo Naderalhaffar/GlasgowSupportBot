@@ -4,6 +4,31 @@
 
 This repository contains the code for the Glasgow Support Bot, a chatbot designed to assist students of the University of Glasgow by providing quick and easy access to information about support services. This tool aims to simplify the process of finding information about various services such as disability support, mental health resources, academic assistance, and more.
 
+### App Interface Overview
+
+Here's a look at the main screen of the app. This view is what users are greeted with upon launching the Glasgow Support Bot.
+
+![App Interface Overview](Screenshots/welocme.png)
+
+
+### User Feedback Mechanism
+
+We highly value user feedback as it helps us improve the Glasgow Support Bot. Below is a screenshot illustrating how users can provide feedback about their experience.
+
+![User Feedback Mechanism](path/to/your/screenshot.jpg)
+
+### Feedback Submission via Email
+
+After collecting feedback, it's important for us to efficiently process and respond to it. The following screenshot demonstrates the feedback submission process through email.
+
+![Feedback Submission via Email](path/to/your/screenshot.jpg)
+
+### Chatting Feature in Action
+
+This screenshot shows the chatting feature, where students can ask questions and receive immediate assistance.
+
+![Chatting Feature in Action](path/to/your/screenshot.jpg)
+
 ## Installation and Setup
 
 ### Git Installation
