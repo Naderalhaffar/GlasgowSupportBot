@@ -8,7 +8,7 @@ This repository contains the code for the Glasgow Support Bot, a chatbot designe
 
 Here's a look at the main screen of the app. This view is what users are greeted with upon launching the Glasgow Support Bot.
 
-![App Interface Overview](Screenshots/welocme.png)
+![App Interface Overview](Screenshots/welcome.png)
 
 
 ### User Feedback Mechanism
