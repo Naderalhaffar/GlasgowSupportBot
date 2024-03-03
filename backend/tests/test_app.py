@@ -16,6 +16,8 @@ def test_environment_variables():
     assert os.environ.get('CLIENT_ID') is not None
     assert os.environ.get('CLIENT_SECRET') is not None
     assert os.environ.get('REFRESH_TOKEN') is not None
+    assert os.environ.get('OPENAI_API_KEY') is not None
+
 
 def test_ask_endpoint_valid_request(client):
     """Test the /ask endpoint with a valid request."""

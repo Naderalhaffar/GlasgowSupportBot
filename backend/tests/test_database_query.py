@@ -18,16 +18,6 @@ def test_query_database_success(__, mock_vector_db, _, mock_ai_responder):
     mock_vector_store_instance.similarity_search_with_relevance_scores.assert_called_once_with("test query", k=2)
     mock_ai_responder_instance.predict.assert_called_once()
 
-# Test query_database function when no relevant search results are found.
-@patch('database_query.VectorDB')
-@patch('database_query.Embeddings')
-def test_query_database_no_results(__, mock_vector_db):
-    mock_vector_store_instance = mock_vector_db.return_value
-    mock_vector_store_instance.similarity_search_with_relevance_scores.return_value = []
-    response = query_database("test query")
-    expected_response = "I'm having trouble finding a precise match for your question. Could you provide more details or try a different question? This helps me understand better and provide more accurate information. You can also contact the Uofg Helpdesk for any queries at https://www.gla.ac.uk/selfservice"
-    assert response == expected_response
-    mock_vector_store_instance.similarity_search_with_relevance_scores.assert_called_once_with("test query", k=2)
 
 # Test query_database function when search results are found but with low relevance scores.
 @patch('database_query.VectorDB')

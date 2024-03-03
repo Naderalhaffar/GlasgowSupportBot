@@ -17,7 +17,7 @@ def query_database(query_text):
     # Execute a similarity search within the database for the given query text, limiting results to top 2 matches.
     search_results = vector_store.similarity_search_with_relevance_scores(query_text, k=2)
     
-    if not search_results or search_results[0][1] < 0.675:
+    if not search_results or search_results[0][1] < 0.665:
             # Offer guidance on refining the query or suggest alternative actions.
         return "I'm having trouble finding a precise match for your question. Could you provide more details or try a different question? This helps me understand better and provide more accurate information. You can also contact the Uofg Helpdesk for any queries at https://www.gla.ac.uk/selfservice"
     
