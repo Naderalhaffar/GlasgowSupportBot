@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 const ChatHistory = ({ onSelectChat, onDeleteChat }) => {
   const [chats, setChats] = useState(() => {
     // Get chats from local storage or return an empty array if none
