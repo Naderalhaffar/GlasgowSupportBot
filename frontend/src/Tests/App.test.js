@@ -82,7 +82,8 @@ describe('App Component', () => {
     expect(screen.getByText(/FAQ/i)).toBeInTheDocument();
 
     userEvent.click(screen.getByText(/Documentation/i));
-    expect(screen.getByText(/Documentation/i)).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /documentation/i })).toBeInTheDocument();
+
   });
   
 
