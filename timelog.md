@@ -326,7 +326,7 @@
 
 ### 5 Mar 2024
 
-* *5 hours* Ensured continuous integration (CI/CD) with Render (the backend) and Vercel (the frontend).
+* *5 hours* Ensured continuous integration (CI/CD) for deployment.
 
 ### 7 Mar 2024
 
