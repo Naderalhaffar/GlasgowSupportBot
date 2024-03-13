@@ -321,3 +321,19 @@
 
 * *0.5 hour* Supervisor meeting to discuss feedback implementation.
 * *3 hour* Refining the code and adding comments.
+
+## Week 21
+
+### 5 Mar 2024
+
+* *5 hours* Ensured continuous integration (CI/CD) with Render (the backend) and Vercel (the frontend).
+
+### 7 Mar 2024
+
+* *5 hours* Writing the conclusion part in the dissertation.
+
+### 8 Mar 2024
+
+* *3 hours* Conducted thorough testing for new features.
+* *3 hours* Finished Writing the Dissertation Draft.
+
