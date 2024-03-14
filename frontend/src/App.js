@@ -31,6 +31,7 @@ function App() {
       setActiveChat(null);
     }
   };
+  
 
   const exportMessagesToTxt = () => {
     if (!activeChat || !activeChat.messages || activeChat.messages.length === 0) {

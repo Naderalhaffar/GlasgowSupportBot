@@ -1,16 +1,46 @@
 import React, { useState, useEffect } from 'react';
 
+import CryptoJS from 'crypto-js';
+
+const secretKey = 'your-secure-key'; // Use a secure, randomly generated key here
+
+// Function to encrypt data before storing it
+const encryptData = (data) => {
+    const ciphertext = CryptoJS.AES.encrypt(JSON.stringify(data), secretKey).toString();
+    return ciphertext;
+};
+
+// Function to decrypt data after retrieving it
+const decryptData = (encryptedData) => {
+    try {
+        const bytes = CryptoJS.AES.decrypt(encryptedData, secretKey);
+        const decryptedData = bytes.toString(CryptoJS.enc.Utf8);
+        return JSON.parse(decryptedData);
+    } catch (error) {
+        console.error("Error decrypting chat history:", error);
+        return []; // Return an empty array or some default state in case of error
+    }
+};
 
 const ChatHistory = ({ onSelectChat, onDeleteChat }) => {
   const [chats, setChats] = useState(() => {
-    // Get chats from local storage or return an empty array if none
-    const savedChats = localStorage.getItem('chatHistory');
-    return savedChats ? JSON.parse(savedChats) : [];
+    try {
+      const savedChats = localStorage.getItem('chatHistory');
+      return savedChats ? decryptData(savedChats) : [];
+    } catch (error) {
+      console.error("Error parsing chat history from localStorage:", error);
+      return []; // Return an empty array or some default state
+    }
   });
 
   // Save chats to local storage whenever the chats array changes
   useEffect(() => {
-    localStorage.setItem('chatHistory', JSON.stringify(chats));
+    try {
+      const encryptedChats = encryptData(chats);
+      localStorage.setItem('chatHistory', encryptedChats);
+    } catch (error) {
+      console.error("Error encrypting and saving chat history:", error);
+    }
   }, [chats]);
 
   const createNewChat = () => {
