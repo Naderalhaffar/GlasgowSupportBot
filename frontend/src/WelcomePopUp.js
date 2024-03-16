@@ -9,7 +9,7 @@ const WelcomePopup = () => {
       const neverShowAgain = localStorage.getItem('neverShowWelcomePopup');
       if (neverShowAgain !== 'true') {
         const popupLastClosed = localStorage.getItem('popupLastClosed');
-        const twelveHoursAgo = Date.now() - 1;
+        const twelveHoursAgo = Date.now() - 12 * 60 * 60 * 1000;
         if (!popupLastClosed || new Date(popupLastClosed).getTime() < twelveHoursAgo) {
           setShowPopup(true);
         }
