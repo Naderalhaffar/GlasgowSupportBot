@@ -162,7 +162,7 @@
 
 ### 30 Nov 2023
 
-* *2 hours* Conducted A/B testing for user interface improvements.
+* *2 hours* Testing different stuff for user interface improvements.
 
 ### 1 Dec 2023
 
