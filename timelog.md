@@ -220,7 +220,7 @@
 ### 16 Jan 2024
 
 * *5 hours* Expanded on the dissertation introduction.
-* *2 hours* Developed Chroma vectorized database logic in backend.
+* *2 hours* Developed Chroma vectorized database logic in the backend.
 
 ### 18 Jan 2024
 
@@ -234,20 +234,20 @@
 
 ### 23 Jan 2024
 
-* *6 hours* Refining chatbox.js, app.js to match current changes.message.
+* *6 hours* Refining chatbox.js, app.js to match current changes. message.
 
 ### 24 Jan 2024
 
-* *6 hours* Started message.js, and writing up the documentation page with css.
+* *6 hours* Started message.js, and wrote up the documentation page with css.
 
 ### 26 Jan 2024
-* *4 hours*  Refining all the files to be in harmony together. Backend and frontend are connected via app.post.
+* *4 hours*  Refining all the files to be in harmony together. The backend and frontend are connected via app.post.
 
 ## Week 16
 
 ### 30 Feb 2024
 
-* *4 hours* Looking for ways deployed the chatbot, and prepared for backend server deployment.
+* *4 hours* Looking for ways to deploy the chatbot, and prepare for backend server deployment.
 
 ### 1 Feb 2024
 
@@ -255,7 +255,7 @@
 
 ### 2 Feb 2024
 
-* *6 hours* Decided to use heroku for server deployment and vercel for backend.
+* *6 hours* Decided to use Heroku for server deployment and Vercel for backend.
 
 
 ## Week 17
@@ -309,18 +309,18 @@
 
 ### 28 Feb 2024
 
-* *3 hour* Updating readme in Github. Added Screenshots.
+* *3 hours* Updating readme in Github. Added Screenshots.
 
-* *3 hour* Decided to use render instead of heroku since heroku isn't free.
+* *3 hours* Decided to use render instead of Heroku since Heroku isn't free.
 
 ### 29 Feb 2024
 
-* *8 hour* Finished the Evaluation Part.
+* *8 hours* Finished the Evaluation Part.
 
 ### 1 Mar 2024
 
-* *0.5 hour* Supervisor meeting to discuss feedback implementation.
-* *3 hour* Refining the code and adding comments.
+* *0.5 hours* Supervisor meeting to discuss feedback implementation.
+* *3 hours* Refining the code and adding comments.
 
 ## Week 21
 
@@ -330,10 +330,25 @@
 
 ### 7 Mar 2024
 
-* *5 hours* Writing the conclusion part in the dissertation.
+* *5 hours* Writing the conclusion part of the dissertation.
 
 ### 8 Mar 2024
 
 * *3 hours* Conducted thorough testing for new features.
 * *3 hours* Finished Writing the Dissertation Draft.
+
+## Week 22
+
+### 13 Mar 2024
+
+* *3 hours*  Refining the dissertation.
+
+### 14 Mar 2024
+
+* *4 hours*  Refining the dissertation.
+
+### 15 Mar 2024
+
+* *0.5 hours* Met with the supervisor to review dissertation progress.
+* *5 hours* Enhanced chatbot security measures and data handling.
 
