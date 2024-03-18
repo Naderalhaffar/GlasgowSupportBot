@@ -15,4 +15,5 @@ google-api-python-client
 gunicorn
 spacy
 Flask-SQLAlchemy
+coverage
 

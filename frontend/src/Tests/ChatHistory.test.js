@@ -2,6 +2,25 @@ import React from 'react';
 import { render, screen, fireEvent, act } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import ChatHistory from '../ChatHistory';
+import { encryptData, decryptData } from '../ChatHistory';
+
+// Mocking the encryption and decryption to return data as-is
+jest.mock('crypto-js', () => ({
+  AES: {
+    encrypt: jest.fn().mockImplementation((data, key) => ({
+      toString: () => data // Mock encrypting data by returning it directly
+    })),
+    decrypt: jest.fn().mockImplementation((ciphertext, key) => ({
+      toString: () => ciphertext // Mock decrypting by returning the input ciphertext
+    }))
+  },
+  enc: {
+    Utf8: {
+      stringify: jest.fn(data => data),
+      parse: jest.fn(data => data)
+    }
+  }
+}));
 
 // Mock localStorage
 const mockLocalStorage = (() => {

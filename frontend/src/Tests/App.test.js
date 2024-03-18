@@ -11,8 +11,37 @@ import '@testing-library/jest-dom';
 
 // Mock scrollIntoView for the test environment
 Element.prototype.scrollIntoView = jest.fn();
+jest.mock('crypto-js', () => ({
+  AES: {
+    encrypt: jest.fn().mockImplementation((data, key) => ({
+      toString: () => `encrypted-${data}`
+    })),
+    decrypt: jest.fn().mockImplementation((data, key) => ({
+      toString: () => `{"data":"decrypted-${data}"}` // Make sure this matches the format your actual decryption would return
+    }))
+  },
+  enc: {
+    Utf8: {
+      stringify: jest.fn().mockImplementation((data) => `decrypted-${data}`)
+    }
+  }
+}));
 
-
+jest.mock('crypto-js', () => ({
+  AES: {
+    encrypt: jest.fn((data, key) => {
+      return { toString: () => `encrypted-${data}` };
+    }),
+    decrypt: jest.fn((data, key) => {
+      return { toString: () => data.replace('encrypted-', '') };
+    }),
+  },
+  enc: {
+    Utf8: {
+      stringify: jest.fn((data) => data),
+    },
+  },
+}));
 // Mock Axios
 jest.mock('axios', () => ({
   post: jest.fn(() => Promise.resolve({ data: { response: 'Mocked response' } })),
@@ -25,6 +54,14 @@ const mockChat = {
     { text: 'Hi, how can I help you?', sender: 'ai' },
   ],
 };
+
+beforeEach(() => {
+  // Clear localStorage
+  localStorage.clear();
+  // Reset all mocks
+  jest.clearAllMocks();
+});
+
 
 // Tests for ChatBox component
 describe('ChatBox Component', () => {

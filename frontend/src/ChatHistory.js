@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import CryptoJS from 'crypto-js';
 
-const secretKey = 'your-secure-key'; // Use a secure, randomly generated key here
+const secretKey = process.env.REACT_APP_ENCRYPT_SECRET_KEY; // Use a secure, randomly generated key here
 
 // Function to encrypt data before storing it
 const encryptData = (data) => {
@@ -21,6 +21,8 @@ const decryptData = (encryptedData) => {
         return []; // Return an empty array or some default state in case of error
     }
 };
+
+
 
 const ChatHistory = ({ onSelectChat, onDeleteChat }) => {
   const [chats, setChats] = useState(() => {
