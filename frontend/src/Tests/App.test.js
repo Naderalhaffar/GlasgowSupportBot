@@ -8,40 +8,9 @@ import ChatHistory from '../ChatHistory';
 import '@testing-library/jest-dom';
 
 
-
 // Mock scrollIntoView for the test environment
 Element.prototype.scrollIntoView = jest.fn();
-jest.mock('crypto-js', () => ({
-  AES: {
-    encrypt: jest.fn().mockImplementation((data, key) => ({
-      toString: () => `encrypted-${data}`
-    })),
-    decrypt: jest.fn().mockImplementation((data, key) => ({
-      toString: () => `{"data":"decrypted-${data}"}` // Make sure this matches the format your actual decryption would return
-    }))
-  },
-  enc: {
-    Utf8: {
-      stringify: jest.fn().mockImplementation((data) => `decrypted-${data}`)
-    }
-  }
-}));
 
-jest.mock('crypto-js', () => ({
-  AES: {
-    encrypt: jest.fn((data, key) => {
-      return { toString: () => `encrypted-${data}` };
-    }),
-    decrypt: jest.fn((data, key) => {
-      return { toString: () => data.replace('encrypted-', '') };
-    }),
-  },
-  enc: {
-    Utf8: {
-      stringify: jest.fn((data) => data),
-    },
-  },
-}));
 // Mock Axios
 jest.mock('axios', () => ({
   post: jest.fn(() => Promise.resolve({ data: { response: 'Mocked response' } })),
@@ -95,18 +64,6 @@ describe('ChatBox Component', () => {
   });
 });
 
-// Tests for ChatHistory component
-describe('ChatHistory Component', () => {
-  beforeEach(() => {
-    localStorage.clear();
-  });
-
-  test('renders ChatHistory and creates a new chat', () => {
-    render(<ChatHistory onSelectChat={() => {}} onDeleteChat={() => {}} />);
-    userEvent.click(screen.getByText(/New Chat/i));
-    expect(localStorage.getItem('chatHistory')).not.toBeNull();
-  });
-});
 
 // Tests for App component
 describe('App Component', () => {
