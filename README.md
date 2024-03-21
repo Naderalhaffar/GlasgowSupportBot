@@ -108,7 +108,7 @@ To run tests on the backend, you should stay in the `backend` directory. This pa
 pytest
 ```
 
-This command will automatically find and run all tests within the backend directory. You should see output indicating the number of tests passed, failed, and possibly skipped. There are 9 tests designed to cover various aspects of the backend functionality.
+This command will automatically find and run all tests within the backend directory. You should see output indicating the number of tests passed, failed, and possibly skipped. There are 13 tests designed to cover various aspects of the backend functionality.
 
 ### Frontend Testing
 
