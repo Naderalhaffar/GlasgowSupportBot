@@ -352,3 +352,21 @@
 * *0.5 hours* Met with the supervisor to review dissertation progress.
 * *5 hours* Enhanced chatbot security measures and data handling.
 
+## Week 23
+
+### 17 Mar 2024
+
+* *4 hours* Reviewed and updated all the coding parts.
+
+### 18 Mar 2024
+
+* *4 hours* Finished the final presentation of the project.
+
+### 19 Mar 2024
+
+* *4 hours* Reviewed and Completed the dissertation.
+
+
+### 20 Mar 2024
+
+* *3 hours* Reviewed and Completed the dissertation
