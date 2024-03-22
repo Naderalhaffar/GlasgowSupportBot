@@ -1,8 +1,6 @@
 import React from 'react';
-import { render, screen, fireEvent, act } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import { render, screen} from '@testing-library/react';
 import ChatHistory from '../ChatHistory';
-import { encryptData, decryptData } from '../ChatHistory';
 
 
 

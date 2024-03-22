@@ -1,10 +1,9 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor} from '@testing-library/react';
+import { render, screen, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import axios from 'axios';
 import App from '../App';
 import ChatBox from '../ChatBox';
-import ChatHistory from '../ChatHistory';
 import '@testing-library/jest-dom';
 
 

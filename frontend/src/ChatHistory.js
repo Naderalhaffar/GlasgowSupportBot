@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import CryptoJS from 'crypto-js';
 
-const secretKey = process.env.REACT_APP_ENCRYPT_SECRET_KEY; // Use a secure, randomly generated key here
+const secretKey = process.env.REACT_APP_ENCRYPT_SECRET_KEY; // Secure, randomly generated key here
 
 // Function to encrypt data before storing it
 const encryptData = (data) => {
