@@ -1,0 +1,123 @@
+Meeting 1: 29 September
+Progress: Decision made to create a product around a chosen topic.
+
+Issues Discussed: Weekly planning and project tracking.
+
+Objectives: Finalize the project topic and explore suitable software technologies.
+
+
+
+Meeting 2: 6 October
+Progress: Comprehensive analysis of the University of Glasgow's support services commenced.
+Issues Discussed: Understanding the scope and key features of each service.
+Objectives: Design an intuitive chatbot interface for web access.
+
+
+Meeting 3: 13 October
+Progress: Initial design for the chatbot interface developed.
+Issues Discussed: Incorporating NLP techniques for accurate user interactions.
+Objectives: Develop basic chat functionality and logic processing.
+
+
+Meeting 4: 20 October
+Progress: Basic chat functionality implemented; begun NLP integration.
+Issues Discussed: Enhancing chatbot logic for more accurate responses.
+Objectives: Create a database for storing support service data.
+
+
+Meeting 5: 27 October
+Progress: Database for support service data initiated; web interface development started.
+Issues Discussed: Challenges in database integration and web interface usability.
+Objectives: Enhance chatbot's NLP capabilities; refine web interface.
+
+
+Meeting 6: 3 November
+Progress: Further advancements in NLP integration; web interface improvements.
+Issues Discussed: Preparing for initial testing of chat functionality.
+Objectives: Conduct initial tests; start documentation for future reference.
+
+
+Meeting 7: 10 November
+Progress: Initial testing phase completed; feedback mechanisms integrated.
+Issues Discussed: Test results and identified bugs in chat functionality.
+Objectives: Refine chatbot logic; improve error handling.
+
+
+Meeting 8: 17 November
+Progress: Implementation of advanced features like API integration commenced.
+Issues Discussed: Selecting APIs for up-to-date information provisioning.
+Objectives: Enhance multilingual support.
+
+
+Meeting 9: 24 November
+Progress: Development of multilingual support initiated; API integration underway.
+Issues Discussed: Challenges in implementing multilingual features and APIs.
+Objectives: Finalize API integration; continue refining chatbot functionalities.
+
+
+Meeting 10: 1 December
+Progress: OpenAI API integration completed. 
+Issues Discussed: Evaluating user interface and interaction by doing A/B Testing.
+Objectives: Starting the dissertation.
+
+Meeting 11: 19 January
+Progress: The introduction of the dissertation is underway.
+Issues Discussed: General comments on the dissertation, evaluation, and coding journey.
+Objectives: Expand database support.  Chroma was used for vectorized databases and local storage for the history of chat.
+
+
+Meeting 12: 26 January
+Progress: Chroma was developed and the chatbot can now work. The design part in the dissertation is underway.
+Issues Discussed: Implementing robust multilingual support; and efficient database querying.
+Objectives: Enhance error handling; improve web interface usability, Design part to be Done
+
+
+Meeting 13: 2 February
+Progress: Web interface and user documentation enhancements; testing is underway and the design part of the dissertation is nearly Done.
+Issues Discussed: Web interface usability;  dissertation questions and overall journey feedback
+Objectives: Backend testing, evaluation survey.
+
+
+Meeting 14: 9 February
+Progress:  Survey, Backend testing
+Issues Discussed: Integrating additional APIs for comprehensive information services such as Gmail API and OpenAI.
+Objectives: Updating Documentation, FAQ.
+
+
+Meeting 15: 16 February
+Progress: Documentation, FAQ Done.
+Issues Discussed: Key improvement areas in the UI and the addition of a Support services tab.
+Objectives: Implement UI Improvements, Feedback with Gmail API, Finish Testing
+
+
+Meeting 16: 23 February
+Progress: Support Services tab, Feedback Feature done, Testing done, Survey Done, Deployment.
+Issues Discussed: Strategies for ongoing refinement of tabs, and overall UI.
+Objectives: Complete deployment with the backend server as well.
+
+Meeting 17: 1 March
+Progress: Evaluation, Dissertation Design is Done, Implementation started
+Issues Discussed: How to approach the evaluation stage. How to refine what I already have, and extra things to provide in submission.
+Objectives: Film Video, Film Presentation, Finish Implementation.
+
+
+Meeting 18: 8 March
+Progress: Going through the implementation process, and looking for evaluation strategies. 
+
+Objectives: Finish the Implementation part, Finish the evaluation and conclusion parts.
+
+Meeting 19: 15 March
+
+Progress: Everything is ready except the evaluation, Implementation, and conclusion.
+Issues Discussed: How to approach surveying. How to further refine.
+
+Objectives: Finish implementation, Evaluation, and conclusion. 
+
+Meeting 20: 20 March
+
+
+Progress: Conclusion and Evaluation Done. Full Dissertation Done
+Issues Discussed: Refining the dissertation. My supervisor gave me feedback.
+
+Objectives: Presentation, Making sure everything is ready for submission.
+
