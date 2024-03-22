@@ -1,0 +1,44 @@
+Week 1
+
+For Week 1, the discussion was surrounding the weekly project tasks required to maintain a consistent product production. This primarily involves delving into the specifics of project tracking and its essential components.
+
+Week 2
+
+In Week 2, the focus was on in-depth analysis and meticulous design to ensure the precision and specificity of the project, eliminating any potential for broad or ambiguous outcomes. Also more improvement on the weekly updates required by the student. 
+
+Week 3
+
+In Week 3, while we were slightly behind schedule, our primary discussion revolved around the selection of a project. Initially, I contemplated developing a general chatbot, but upon consultation with the supervisor, it became evident that our objective was to emphasize specificity and precision in project choice.
+
+Week 4
+
+In Week 4, we extensively discussed the design phase, particularly focusing on the use case diagram and sequence diagram. Also we revisited and made necessary updates to the system architecture diagram to reflect the most current and accurate representation of the system. Our discussions concluded on a forward-looking note, with plans to transition into the development phase by next week. This progression signifies our commitment to staying on track and adhering to the project timeline.
+
+Week 5
+
+In Week 5, after successfully completing the design phase, our discussion centered around transitioning to the development side. Pleased with the design accomplishments, we explored the optimal tools, technologies, and frameworks to align with the established design blueprint. We also set a preliminary timeline for development milestones, emphasizing the need for regular communication and feedback. As the week concluded, I felt prepared to dive into the development process.
+
+Week 6
+
+In Week 6, I presented the initial stages of the user interface development, showcasing the foundational HTML and CSS design which is yet to be functional. I discussed the basic layout, the color scheme in alignment with the university's branding, and the preliminary non-interactive buttons. I also laid out the immediate next steps for my project, which include implementing JavaScript to make the UI interactive, particularly making the buttons work, and beginning the development of the chatbot's rules-based response logic.
+
+Week 7: 
+After the initial testing phase, we dove into the feedback, pinpointing bugs and areas needing improvement. Our focus was on enhancing error handling and refining the chatbot's response logic. The sessions with my supervisor were crucial, as they helped me strategize on debugging and improving the system's resilience, making the chatbot more reliable for users.
+
+Week 8: 
+This was an exciting phase as we began integrating APIs, such as OpenAI, to enrich the chatbot's capabilities, and started researching multilingual support to broaden user accessibility. My supervisor encouraged me to tackle the technical challenges this introduced and underscored the importance of thorough testing to ensure seamless integration.
+
+Week 9 & 10:
+With basic API integration in place, the focus shifted to refining these connections and improving the user interface based on A/B testing results. The discussions with my supervisor centered around interpreting these results to make informed UI/UX decisions, ensuring the chatbot was both functional and visually appealing.
+
+Weeks 11-13: 
+As the project's complexity increased, so did the need for detailed documentation and robust testing. My supervisor's advice on documenting every step and testing rigorously helped ensure that no detail was overlooked. This period was characterized by implementing documentation js and css components, enhancing frontend and backend functionalities, and initiating the dissertation writing, particularly the design and implementation sections.
+
+Weeks 14-16:
+These weeks were marked by efforts to finalize the project for deployment. We decided on platforms for deploying the chatbot and made last-minute adjustments based on feedback. My supervisor's insights into selecting deployment platforms that would best suit the project's needs were invaluable.
+
+Weeks 17-19: 
+As we moved closer to completing the project, our meetings focused on evaluating the chatbot's performance, refining the dissertation, and ensuring that all coding parts were reviewed and updated. The guidance received during this time was instrumental in fine-tuning the project and preparing for the final presentation.
+
+Weeks 20-23:
+The final weeks were dedicated to putting the finishing touches on the dissertation, conducting thorough testing of new features, and ensuring continuous integration with Render and Vercel for a smooth deployment. My supervisor's support was crucial for the evaluation as she told me how to to approach the evaluation stage and how to send it making use of my connections.
