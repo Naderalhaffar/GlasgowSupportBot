@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.4cbddbba.css",
-    "main.js": "/static/js/main.720b9350.js",
-    "static/js/592.bf6ca574.chunk.js": "/static/js/592.bf6ca574.chunk.js",
+    "main.js": "/static/js/main.93c50a99.js",
+    "static/js/592.0803614d.chunk.js": "/static/js/592.0803614d.chunk.js",
     "static/media/UniversityBackground.png": "/static/media/UniversityBackground.1e17df21fe84217146fe.png",
     "index.html": "/index.html",
     "main.4cbddbba.css.map": "/static/css/main.4cbddbba.css.map",
-    "main.720b9350.js.map": "/static/js/main.720b9350.js.map",
-    "592.bf6ca574.chunk.js.map": "/static/js/592.bf6ca574.chunk.js.map"
+    "main.93c50a99.js.map": "/static/js/main.93c50a99.js.map",
+    "592.0803614d.chunk.js.map": "/static/js/592.0803614d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4cbddbba.css",
-    "static/js/main.720b9350.js"
+    "static/js/main.93c50a99.js"
   ]
 }
